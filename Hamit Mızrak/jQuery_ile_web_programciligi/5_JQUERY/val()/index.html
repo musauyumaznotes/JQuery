@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form action="">
+                <div class="form-group mt-5">
+                    <label for="adi">Adınız : </label>
+                    <input type="text" id="adi" name="adi" class="form-control">
+                    <small class="text-muted text-danger form-text">adınızı girmediniz</small>
+                </div>
+                <div class="form-group mt-5">
+                    <label for="soyadi">Soyadınız : </label>
+                    <input type="text" id="soyadi" name="soyadi" class="form-control">
+                    <small class="text-muted text-danger form-text">soyadınızı girmediniz</small>
+                </div>
+                <button class="btn btn-primary" type="submit" id="gonder" name="gonder"
+                    onclick="online_register()">Kayıt
+                    Ol</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function online_register() {
+            var adiJQuery = $("#adi").val();
+            var soyadiJQuery = $("#soyadi").val();
+            if(adiJQuery!=null && soyadiJQuery!=null){
+            alert("Adım : " + adiJQuery + " soyadim : " + soyadiJQuery)
+            }
+        }
+    </script>
+</body>
+
+</html>

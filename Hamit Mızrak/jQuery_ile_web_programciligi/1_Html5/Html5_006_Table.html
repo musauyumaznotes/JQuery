@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Özellikler</title>
+</head>
+
+<body>
+    <!-- <table></table>//etiketi HTML tabloları tanımlar
+    <th></th>//tablo başlığını yazmak
+    <tr></tr>satır yazmak
+    <td></td>//sutun yazmak
+    <caption></caption>//Ana başlık
+    <thead></thead>//Başlıkları bir arada tutar
+    <tbody></tbody>//içerikleri bir arada tutar
+    <colspan></colspan>sütunları birleştirir satır yapar
+    <rowspan></rowspan>//satırları birleştirir sütun yapar
+    <tfood></tfood>//alt bilgileri göstermek için -->
+
+
+    <h1>Table ÖZellikler</h1>
+    <table border="1" width="100%">
+        <caption>Dersler Listesi</caption>
+        <thead>
+            <tr>
+                <th>Frontend</th>a
+                <th>Backend</th>
+                <th>Database</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JQuery</td>
+                <td>JSP</td>
+                <td>MySql</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td rowspan="2">Jsf</td>
+                <td>MsSql</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <!-- <td>JSF</td> -->
+                <td>MongoDb</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Bütün Dersler</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

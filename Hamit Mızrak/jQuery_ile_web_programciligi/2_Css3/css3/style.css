@@ -1,0 +1,43 @@
+/* h2{
+    color: orange;
+} */
+/* p{
+    font-size: 10px;
+} */
+table{
+    width: 100%;
+    cursor: pointer;
+}
+table thead{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border:none
+}
+
+table thead tr th{
+    font-size: 18px ;
+    padding: 8px;
+    text-transform: capitalize;
+}
+tbody{
+    background-color: black;
+    color: white;
+}
+table tbody tr>td {
+      border-collapse: collapse;
+}
+tr:nth-of-type(even){
+    background-color: slateblue;
+  
+}
+tr:hover{
+    background-color: rgb(58, 8, 58);
+}
+thead tr>th:nth-child(1){
+    background-color: springgreen;
+}
+
+tr>td:first-child{
+    background-color: royalblue;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- action-> Bilgileri nereye göndereyim
+    method-> bilgi giderken url görünsün mü görünmesin mi? güvenlik için 
+    name->server bağlantısı için
+    id->sayfada tagler arasında bağlantı için
+    required->zorunlu alan
+    placeholder->input içeriğinde
+
+
+-->
+    <form action="index.htm">
+        Adı:<input type="text" name="server_baglanti" id="adi" required placeholder="Adınızı Giriniz..."><br>
+        Password:<input type="password" name="server_baglanti2" id="sifre" required placeholder="Şifrenizi Giriniz...">
+        <br>
+        Email:<input type="email" name="server_baglanti3" id="sifre" required placeholder="Şifrenizi Giriniz...">
+        <br>
+        <select name="" id="">
+            <option value="">Frontend</option>
+            <option value="">Frontend-2</option>
+            <option value="">Frontend-3</option>
+        </select>
+        <br>
+        <hr>
+        <select name="" id="" multiple>
+            <option value="">Frontend</option>
+            <option value="">Frontend-2</option>
+            <option value="">Frontend-3</option>
+        </select>
+        <br>
+        <label for="number">sayı:</label><br>
+        <input type="number" id="number" name="server_baglanti4" min="10" max="100" step="5" value="25"><br>
+        <hr>
+        <hr>
+        <hr>
+        <label for="">Cinsiyet</label><br>
+        Bayan : <input type="radio" name="cinsiyet" id="cns">
+        Erkek : <input type="radio" name="cinsiyet" id="cns-2">
+        <hr>
+        <hr>
+        <br>
+        <label for="">Kitaplar</label><br>
+        Java : <input type="checkbox" name="check1" id="kitap1">
+        JSF : <input type="checkbox" name="check2" id="kitap2">
+        Spring Boot : <input type="checkbox" name="check3" id="kitap3">
+        <br>
+        <hr>
+        <hr>
+        <input type="reset" value="Temizle">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>

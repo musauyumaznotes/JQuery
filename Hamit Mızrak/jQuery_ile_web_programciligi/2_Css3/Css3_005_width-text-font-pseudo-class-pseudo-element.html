@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: center;/*Yazı konumu*/
+            text-transform: lowercase; /*Yazı büyük küçük */
+            text-shadow: 0.2px 0.6px 6px  yellow; /*Gölge*/
+            text-decoration: overline;/*Üst Çizgi*/
+
+            font:25px Arial,sans-serif;
+            text-indent: 12px;/*Girinti*/
+            letter-spacing: 0.8px;/*Harfler arası boşluk*/
+            line-height: 50.9px;/*satırlar arası boşluk*/
+            word-spacing: 4px;/*Kelimeler arası boşluk*/
+        }
+        
+        .deneme:first-letter{ /*pseude class*/
+            float: left;
+            line-height: 1em;
+            margin: 0.25em 0;
+            font: 4.4em 'PaldinFLFRegular',sans-serif,Arial;
+            text-transform: uppercase;
+        }
+        
+        p::first-letter{ /*pseude element*/
+            float: left;
+            line-height: 1em;
+            margin: 0.25em 0;
+            font: 4.4em 'PaldinFLFRegular',sans-serif,Arial;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h2>height width text-font</h2>
+
+    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nihil repudiandae sequi odit corporis, delectus maxime quos temporibus voluptates velit suscipit tempore dolores ipsum. Ipsum sed repellendus accusantium sapiente, quod expedita praesentium fuga dolore officiis maxime ex aperiam necessitatibus voluptatibus ipsa enim. Possimus molestias itaque quasi incidunt aut minus. Unde? </p>
+    <h1 class="deneme">btk akademi</h1>
+</body>
+</html>

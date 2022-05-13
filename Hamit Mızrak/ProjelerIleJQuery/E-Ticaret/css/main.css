@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box!important;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'PT Serif', serif;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body class="container ">
+   
+    <form action="">
+        <input type="submit" value="parametresiz" onclick="$.gonderFonksiyon()">
+        <input type="submit" value="parametreli" onclick="$.gonderFonksiyon2('degerli')">
+    </form>
+<script>
+    $(function () {
+        $.gonderFonksiyon=function () {
+            alert("Merhabalar Güzel İnsanlar");
+        }
+    })
+</script>
+<script>
+    $(function () {
+        $.gonderFonksiyon2=function (param) {
+            alert("Merhabalar Güzel İnsanlar" +param);
+        }
+    })
+</script>
+</body>
+
+</html>

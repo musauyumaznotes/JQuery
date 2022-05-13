@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="addClassRemoveClassToggleClass.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position: relative;
+            animation: degisken 8s infinite;
+        }
+        .addClassOrnegi44{
+            border: 20px solid red;
+        }
+        @keyframes degisken{
+            from{left:0px;}
+            to{left:250px}
+        }
+        div:hover{
+            box-shadow:10px 10px 10px black ;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>AddClass RemoveClass ToggleClass</h2>
+    <div></div>
+    <script>
+        $(document).ready(function() {
+            // $("div").addClass("addClassOrnegi44");
+            // $("div").removeClass("addClassOrnegi44");
+            $("div").toggleClass("addClassOrnegi44");
+        })
+    </script>
+</body>
+
+</html>

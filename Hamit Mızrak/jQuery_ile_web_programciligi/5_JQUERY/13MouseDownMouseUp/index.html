@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .divClass {
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 2rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, id. </p>
+    <p style="font-size: 1rem; color:blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, id. </p>
+    <p style="font-size: 2rem; color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, id. </p>
+
+    <script>
+        $(function () {
+            $("p").mousedown(function () {
+                $(this).after("<b><i><code><mark> mouse down yapıldı </mark></code></i></b>");
+            })
+        })
+        $(function () {
+            $("p").mouseup(function () {
+                $(this).after("<b><i><code><big><mark> mouse up yapıldı </mark></big></code></i></b>");
+            })
+        })
+    </script>
+
+</body>
+
+</html>

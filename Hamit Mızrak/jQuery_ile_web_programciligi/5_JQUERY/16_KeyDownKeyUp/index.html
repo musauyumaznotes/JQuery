@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .divClass {
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body class="container ">
+    <form action="">
+        <div class="form-group">
+            <span for="adi">Adınız</span>
+            <input type="text" class="form-control" name="adi" id="adi" placeholder="Adınız">
+        </div>
+        <div class="form-group">
+            <span for="soyadi">Soyadınız</span>
+            <input type="text" class="form-control" name="soyadi" id="soyadi" placeholder="Soyadınız">
+        </div>
+    </form>
+    <div>
+        <p>keydown</p>
+        <span id="result_span"></span>
+        <p>keyup</p>
+        <span id="result_span2"></span>
+    </div>
+
+    <script>
+        var counter = 0;
+        $("#adi").keydown(function () {
+            $("div #result_span").text(counter += 1);
+        })
+
+    </script>
+    <script>
+        var counter = 0;
+        $("#soyadi").keyup(function () {
+            $("div #result_span2").text(counter += 1);
+        })
+
+    </script>
+
+</body>
+
+</html>

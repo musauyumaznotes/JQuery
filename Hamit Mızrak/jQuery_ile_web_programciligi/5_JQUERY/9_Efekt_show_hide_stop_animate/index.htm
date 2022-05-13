@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="ml-3-mr-5" id="div_id">
+        <p id="p_id">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellat!</p><br>
+
+        <h4>SHOW/HIDE</h4>
+        <button class="btn btn-primary mt-5" id="show" name="show">Show</button>
+        <button class="btn btn-warning mt-5" id="hide" name="hide">Hide</button>
+        <br>
+        <br>
+
+        <h4>FADE</h4>
+        <button class="btn btn-primary mt-5" id="fadeIn" name="fadeIn">FadeIn</button>
+        <button class="btn btn-danger mt-5" id="fadeOut" name="fadeOut">FadeOut</button>
+        <button class="btn btn-dark mt-5" id="fadeToggle" name="fadeToggle">FadeToggle</button>
+        <button class="btn btn-success mt-5" id="fadeTo" name="fadeTo">FadeTo</button><br><br>
+
+        <h4>SLIDE</h4>
+        <button class="btn btn-primary mt-5" id="slideDown" name="slideDown">SlideDown</button>
+        <button class="btn btn-success mt-5" id="slideUp" name="slideUp">SlideUp</button>
+        <button class="btn btn-dark mt-5" id="slideToggle" name="slideToggle">SlideToggle</button><br><br>
+
+        <h4>Animate</h4>
+        <button class="btn btn-primary mt-5" id="animate" name="animate">Animate</button>
+        <button class="btn btn-outline-dark mt-5" id="stop" name="stop">Stop</button>
+    </div>
+
+    <!-- HideShow -->
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("#p_id").hide(1000);
+            })
+        });
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $("#p_id").show(1000, function () { alert("Gösterildi") });
+            })
+        })
+
+
+    </script>
+    <!-- Fade -->
+    <script>
+        $(document).ready(function () {
+            $("#fadeIn").click(function () {
+                $("#p_id").fadeIn(1000);
+            })
+        })
+        $(document).ready(function () {
+            $("#fadeOut").click(function () {
+                $("#p_id").fadeOut(1000);
+            })
+        })
+        $(document).ready(function () {
+            $("#fadeTo").click(function () {
+                $("#p_id").fadeTo(1000);
+            });
+
+        })
+        $(document).ready(function () {
+            $("#fadeToggle").click(
+                function () {
+                    $("#p_id").fadeToggle(1000);
+                }
+            )
+        })
+    </script>
+    <!-- Slide -->
+    <script>
+        $(document).ready(function () {
+            $("#slideDown").click(function () {
+                $("#p_id").slideDown(1000);
+            })
+        })
+        $(document).ready(function () {
+            $("#slideUp").click(function () {
+                $("#p_id").slideUp(1000);
+            })
+        })
+        $(document).ready(function () {
+            $("#slideToggle").click(function () {
+                $("#p_id").slideToggle(1000);
+            })
+        })
+    </script>
+    <!-- Animate Stop -->
+    <script>
+        $(document).ready(function () {
+            $("#animate").click(function () {
+                $("#div_id").animate({
+                    width:200,
+                    height:200,
+                    opacity:.7,
+                    left:40,
+                    right:40
+                });
+            })
+        })
+        $(document).ready(function () {
+            $("stop").click(function () {
+                $("p_id").stop(1000);
+            })
+        })
+    </script>
+</body>
+
+</html>

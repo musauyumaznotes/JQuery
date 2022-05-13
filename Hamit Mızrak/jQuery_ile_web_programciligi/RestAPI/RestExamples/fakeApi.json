@@ -1,0 +1,12 @@
+{
+"posts":[
+{"id":1,"name":"Musa","surname":"UYUMAZ"},
+{"id":2,"name":"Serhat","surname":"UYUMAZ"},
+{"id":3,"name":"Osman","surname":"UYUMAZ"}
+],
+"comments":[
+{"id":1,"body":"some comment","postId":1},
+{"id":2,"body":"some comment2","postId":2}
+],
+"profile":{"name":"typicode"}
+}
